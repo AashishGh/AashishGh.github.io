@@ -353,6 +353,35 @@ section .title::after {
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+/* make the entire card clickable */
+.serv-content .card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  /* ensure the .card fills the wrapper */
+  .serv-content .card-link .card {
+    height: 100%;
+  }
+/* ─── Make project cards sit in one horizontal row ─── */
+#projects .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;               /* space between cards */
+    justify-content: center; /* center them if there’s extra space */
+  }
+  
+  #projects .card-link {
+    /* each link will take up roughly a third of the row */
+    flex: 0 1 calc(33.333% - 20px);
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #projects .card-link .card {
+    height: 100%;            /* stretch the card to fill its wrapper */
+  }
+    
 
 /* === Skills List Styling === */
 .skills {
