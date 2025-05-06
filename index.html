@@ -135,56 +135,63 @@
   </section>
 
   <!-- projects & publications section start -->
-  <section class="services" id="projects">
+<section class="services" id="projects">
     <div class="max-width">
       <h2 class="title">Projects & Publications</h2>
-      
       <div class="serv-content">
-        
+  
         <div class="card">
-            <a href="https://ieeexplore.ieee.org/abstract/document/10835588" style="text-decoration: none;">
+          <a href="https://ieeexplore.ieee.org/abstract/document/10835588" target="_blank" style="text-decoration:none; color:inherit;">
             <div class="box">
-            <i class="fas fa-project-diagram"></i>
-            <div class="text">
-              Enhanced Model Robustness<br>
-              CogMI 2024 (IEEE)
+              <i class="fas fa-project-diagram"></i>
+              <div class="text">
+                Enhanced Model Robustness<br>
+                CogMI 2024 (IEEE)
+              </div>
+              <p>
+                • Integrated CBAM + Non-Local blocks in PyTorch, improving CIFAR-10 robustness by 10.5%.<br>
+                • Tracked experiments & metrics with MLflow; full article on IEEE Xplore.
+              </p>
             </div>
-            <p>
-              • Integrated CBAM + Non-Local blocks in PyTorch, improving CIFAR-10 robustness by 10.5%.<br>
-              • Tracked experiments & metrics with MLflow; full article on IEEE Xplore.
-            </p>
-          </div>
+          </a>
         </div>
-    </a>
+  
         <div class="card">
-          <div class="box">
-            <i class="fas fa-robot"></i>
-            <div class="text">
-              RAG Chatbot<br>
-              Python | FastAPI | Elasticsearch | React
+          <a href="https://github.com/AashishGh/CRAG-System" target="_blank" style="text-decoration:none; color:inherit;">
+            <div class="box">
+              <i class="fas fa-robot"></i>
+              <div class="text">
+                RAG Chatbot<br>
+                Python | FastAPI | Elasticsearch | React
+              </div>
+              <p>
+                • Built domain-specific LLM chatbot with vector retrieval (all-MiniLM-L6-v2).<br>
+                • Integrated DeepSeek, added scalability, benchmarking & logging/monitoring.
+              </p>
             </div>
-            <p>
-              • Built domain-specific LLM chatbot with vector retrieval (all-MiniLM-L6-v2).<br>
-              • Integrated DeepSeek, added scalability, benchmarking & logging/monitoring.
-            </p>
-          </div>
+          </a>
         </div>
+  
         <div class="card">
-          <div class="box">
-            <i class="fas fa-blog"></i>
-            <div class="text">
-              Blogging Web App<br>
-              Django | HTML/CSS | JavaScript
+          <a href="https://github.com/AashishGh/Blogging-Site" target="_blank" style="text-decoration:none; color:inherit;">
+            <div class="box">
+              <i class="fas fa-blog"></i>
+              <div class="text">
+                Blogging Web App<br>
+                Django | HTML/CSS | JavaScript
+              </div>
+              <p>
+                • Full-stack CRUD platform with auth, rich-text editor, categories & search.<br>
+                • Deployed on PostgreSQL; source on GitHub.
+              </p>
             </div>
-            <p>
-              • Full-stack CRUD platform with auth, rich-text editor, categories & search.<br>
-              • Deployed on PostgreSQL; source on GitHub.
-            </p>
-          </div>
+          </a>
         </div>
+  
       </div>
     </div>
   </section>
+  
 
 
   <!-- activities section start -->
@@ -257,6 +264,43 @@
   </section>
   <!-- skills section end -->
   
+<!-- blog & reflections section start -->
+<section class="services" id="blog">
+    <div class="max-width">
+      <h2 class="title">Blog &amp; Reflections</h2>
+      <div class="serv-content">
+  
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-wave-square"></i>
+            <div class="text">
+              <h3>Fast Fourier Transform (FFT)</h3>
+            </div>
+            <p>
+              A fast Fourier transform (FFT) is an algorithm that computes the discrete Fourier transform (DFT) of a sequence, or its inverse, reducing the complexity from O(n²) to O(n log n), and enabling rapid conversion between time and frequency domains.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Fast_Fourier_transform" class="read-more" target="_blank" rel="noopener">Read more →</a>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-language"></i>
+            <div class="text">
+              <h3>The Rise of Large Language Models (LLMs)</h3>
+            </div>
+            <p>
+              Explore how language models evolved into today’s large language models—powered by Transformers—enabling advances in text generation, summarization, question-answering, and even zero-shot learning across NLP applications.
+            </p>
+            <a href="https://medium.com/@awaldeep/the-rise-of-large-language-models-llms-f70e5c311d79" class="read-more" target="_blank" rel="noopener">Read more →</a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
 
   <!-- contact section start -->
   <section class="contact" id="contact">
@@ -281,8 +325,12 @@
 
   <!-- footer section start -->
   <footer>
-    <span>Created By <a href="#">Aashish Ghimire</a> | <span class="far fa-copyright"></span> 2025 All rights reserved.</span>
+    <span>
+      Created By <a href="#">Aashish Ghimire</a> |
+      <span id="current-year"></span> All rights reserved.
+    </span>
   </footer>
+  
 
   <script src="script.js"></script>
 </body>
